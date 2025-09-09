@@ -3,7 +3,8 @@
 ## Cara Kumpul Praktikum
 - Fork repo asisten
 - Clone repo yang sudah di fork ke dalam file penyimpanan
-- Di dalam folder NIM masing masing buat folder praktikum sesuai dengan nomor praktikum
+- Buat folder sesuai NIM masing masing
+- Di dalam folder NIM buat folder praktikum sesuai dengan nomor praktikum
 - Buka Command prompt
 - Ketik git add .
 - Lalu git status untuk melihat apakah sudah bertambah
