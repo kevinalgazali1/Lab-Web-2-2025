@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            MyPorto
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="quick-stats-section">
+            <h2>Contact Information</h2>
+            
+            <table>
+                <tr>
+                    <th>Email</th>
+                    <td>ghaniyyu25@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Nomor Telepon</th>
+                    <td>+62 888 0407 4481</td>
+                </tr>
+                <tr>
+                    <th>LinkedIn</th>
+                    <td><a href="https://linkedin.com/in/username" target="_blank">linkedin.com/in/username</a></td>
+                </tr>
+                <tr>
+                    <th>Instagram</th>
+                    <td><a href="https://instagram.com/b.ghanyy_" target="_blank">@b.ghanyy_</a></td>
+                </tr>
+                <tr>
+                    <th>GitHub</th>
+                    <td><a href="https://github.com/Ghanyy25" target="_blank">github.com/Ghanyy25</a></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+
+                <label for="name">Nama:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Nomor Telepon:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label>Tipe Pesan:</label><br>
+                <input type="radio" id="pertanyaan" name="tipe" value="Pertanyaan" required>
+                <label for="pertanyaan">Pertanyaan</label><br>
+                <input type="radio" id="kritik" name="tipe" value="Kritik">
+                <label for="kritik">Kritik</label><br>
+                <input type="radio" id="saran" name="tipe" value="Saran">
+                <label for="saran">Saran</label><br>
+                <input type="radio" id="kerjasama" name="tipe" value="Kerjasama">
+                <label for="kerjasama">Kerjasama</label><br><br>
+
+                <label for="message">Pesan Detail:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">Saya menyetujui penggunaan data yang saya kirimkan</label><br><br>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ghani. Hak Cipta Dilindungi.</p>
+        <div class="social-media-links">    
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/b.ghanyy_/"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/Ghanyy25"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
