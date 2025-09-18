@@ -1,0 +1,491 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: linear-gradient(90deg, #232526 0%, #414345 100%);
+	color: #fff;
+	padding: 18px 40px;
+	box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.logo {
+	font-size: 2.2rem;
+	font-weight: bold;
+	letter-spacing: 2.5px;
+	color: #ffb300;
+	text-shadow: 1px 2px 8px rgba(0,0,0,0.10);
+}
+
+nav ul {
+	display: flex;
+	gap: 32px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.15rem;
+	font-weight: 500;
+	padding: 8px 18px;
+	border-radius: 6px;
+	transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+	background: #ffb300;
+	color: #232526;
+	box-shadow: 0 2px 8px rgba(255,179,0,0.10);
+}
+
+footer {
+	width: 100vw;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	background: linear-gradient(90deg, #232526 0%, #414345 100%);
+	color: #fff;
+	box-shadow: 0 -2px 12px rgba(0,0,0,0.10);
+	padding: 28px 0 18px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+footer p {
+	margin: 0 0 8px 0;
+	font-size: 1rem;
+	letter-spacing: 0.5px;
+}
+
+.social-links {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	flex-wrap: wrap;
+}
+
+.social-links img {
+	width: 28px;
+	height: 28px;
+	object-fit: contain;
+	margin-right: 4px;
+	vertical-align: middle;
+	filter: drop-shadow(0 1px 4px rgba(0,0,0,0.10));
+	transition: transform 0.18s;
+}
+
+.social-links img:hover {
+	transform: scale(1.12);
+}
+
+.social-links a {
+	color: #fff;
+	text-decoration: none;
+	margin-right: 12px;
+	font-size: 1rem;
+	font-weight: 500;
+	transition: color 0.2s;
+	letter-spacing: 0.5px;
+}
+
+.social-links a:hover {
+	color: #963b0e;
+}
+
+.hero-section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #e0e0e0;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    color: #333333;
+    margin: 0 0 10px 0;
+}
+
+.tagline {
+    font-style: italic;
+    color: #666666;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.quick-stats {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.quick-stats h2 {
+    font-size: 1.8em;
+    color: #333333;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.quick-stats table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.quick-stats th, .quick-stats td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.quick-stats th {
+    font-weight: 600;
+    color: #555555;
+    width: 40%;
+}
+
+.quick-stats td {
+    color: #666666;
+    width: 60%;
+}
+
+.quick-stats tr:last-child th,
+.quick-stats tr:last-child td {
+    border-bottom: none;
+}
+
+.personal-info {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.personal-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.personal-info th, .personal-info td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.personal-info th {
+    font-weight: 600;
+    color: #555555;
+    width: 40%;
+}
+
+.personal-info td {
+    color: #666666;
+    width: 60%;
+}
+
+.personal-info tr:last-child th,
+.personal-info tr:last-child td {
+    border-bottom: none;
+}
+
+.bio {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: justify;
+    margin-bottom: 20px;
+	font-size: 18px;
+}
+
+.kolom-3 {
+    display: flex; /* Mengaktifkan Flexbox */
+    flex-wrap: wrap; /* Memungkinkan item untuk pecah baris jika layar kecil */
+    gap: 20px; /* Memberi jarak antar kolom */
+    justify-content: space-around; /* Menata item dengan ruang di antaranya */
+    margin: 0 auto; /* Tengah secara horizontal */
+    max-width: 1200px; /* Lebar maksimal container */
+}
+
+/* Mengatur setiap section agar menjadi kolom */
+.education, .skills, .hobbies-interests { /* Perhatikan perubahan nama class 'hobbies&interests' */
+    flex: 1; /* Setiap kolom akan mengambil ruang yang sama */
+    min-width: 280px; /* Lebar minimum untuk mencegah kolom terlalu kecil pada layar sempit */
+    box-sizing: border-box; /* Memastikan padding dan border tidak menambah lebar elemen */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9
+}
+
+.education dt {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+    margin-top: 15px;
+}
+
+.education dd {
+    margin-left: 0;
+    padding-left: 15px;
+    border-left: 3px solid #007bff;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.education dt::before {
+    content: "🎓 ";
+    color: #007bff;
+}
+
+/* --- Styling Khusus untuk Section Skills --- */
+.skills ul {
+    list-style: none; /* Menghilangkan bullet default */
+    padding: 0;
+}
+
+.skills li {
+    background-color: #e2f0ff;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #0056b3;
+    font-weight: 500;
+    position: relative;
+    padding-left: 30px; /* Ruang untuk ikon */
+}
+
+.skills li::before {
+    content: "✅"; /* Ikon centang */
+    position: absolute;
+    left: 10px;
+    color: #28a745;
+}
+
+.hobbies-interests {
+    /* Menggunakan class yang telah diperbaiki dari jawaban sebelumnya */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan */
+}
+
+.hobbies-interests ol {
+    list-style: none; /* Menghilangkan penomoran default */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Mengatur item secara horizontal */
+    flex-direction: column;
+    gap: 10px; /* Jarak antar item */
+}
+
+.hobbies-interests li {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    display: flex; /* Mengatur konten di dalam item */
+    align-items: center;
+    transition: transform 0.2s ease-in-out; /* Animasi saat hover */
+}
+
+.hobbies-interests li::before {
+    content: "🎮"; /* Placeholder ikon */
+    font-size: 1.2em;
+    margin-right: 15px;
+}
+
+/* Mengubah ikon untuk setiap item. Gunakan `nth-child` untuk menargetkan urutan item. */
+.hobbies-interests li:nth-child(1)::before {
+    content: "♟️"; /* Ikon untuk Catur */
+}
+
+.hobbies-interests li:nth-child(2)::before {
+    content: "🎮"; /* Ikon untuk Main Game */
+}
+
+.hobbies-interests li:nth-child(3)::before {
+    content: "📺"; /* Ikon untuk Nonton Anime */
+}
+
+/* Media Queries untuk responsif */
+@media (max-width: 768px) {
+    .container-3-columns {
+        flex-direction: column; /* Ubah menjadi satu kolom saat layar kecil */
+        align-items: center; /* Pusatkan item */
+    }
+    .education, .skills, .hobbies-interests {
+        max-width: 90%; /* Ambil lebar hampir penuh */
+        margin-bottom: 20px; /* Tambahkan jarak antar section saat dalam satu kolom */
+    }
+}
+
+.contact-information {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-information table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.contact-information th, .contact-information td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.contact-information th {
+    font-weight: 600;
+    color: #555555;
+    width: 40%;
+}
+
+.contact-information td {
+    color: #666666;
+    width: 60%;
+}
+
+.contact-information tr:last-child th,
+.contact-information tr:last-child td {
+    border-bottom: none;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: flex;
+  margin-bottom: 5px;
+  color: #000000;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #3a3a3a;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #c5c5c5;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+fieldset {
+  border: 1px solid #3c3838;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+legend {
+  font-weight: bold;
+  color: #333;
+  padding: 0 10px;
+}
+
+fieldset div {
+    display: flex;
+  margin-bottom: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #484c50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+fieldset {
+    display: flex; /* Mengaktifkan Flexbox */
+    flex-wrap: wrap; /* Memungkinkan item untuk pecah baris jika layar kecil */
+    gap: 20px; /* Memberi jarak antar kolom */ /* Menata item dengan ruang di antaranya */
+     /* Tengah secara horizontal */
+    max-width: 1200px; /* Lebar maksimal container */
+}
