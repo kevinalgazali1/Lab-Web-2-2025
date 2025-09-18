@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Portfolio Saya</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h2>AAT</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-info">
+        <h2>Informasi Kontak</h2>
+        <table>
+          <tr>
+            <th>Email</th>
+            <td>akramtamir12@gmail.com</td>
+          </tr>
+          <tr>
+            <th>Nomor Telepon</th>
+            <td>081122223333</td>
+          </tr>
+          <tr>
+            <th>LinkedIn</th>
+            <td>Akram Alfadli Tamir</td>
+          </tr>
+          <tr>
+            <th>Instagram</th>
+            <td>@akrm_dwf</td>
+          </tr>
+          <tr>
+            <th>GitHub</th>
+            <td>Akram-Dwf</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="contact-form">
+        <h2>Hubungi Saya</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Alamat Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="telepon">Nomor Telepon:</label>
+            <input type="tel" id="telepon" name="telepon" required />
+          </div>
+
+          <div class="form-group">
+            <label>Tipe Pesan:</label>
+            <input
+              type="radio"
+              id="pertanyaan"
+              name="tipe_pesan"
+              value="pertanyaan"
+              required
+            />
+            <label for="pertanyaan">Pertanyaan</label>
+            <input type="radio" id="kritik" name="tipe_pesan" value="kritik" />
+            <label for="kritik">Kritik</label>
+            <input type="radio" id="saran" name="tipe_pesan" value="saran" />
+            <label for="saran">Saran</label>
+            <input
+              type="radio"
+              id="kerjasama"
+              name="tipe_pesan"
+              value="kerjasama"
+            />
+            <label for="kerjasama">Kerjasama</label>
+          </div>
+
+          <div class="form-group">
+            <label for="pesan">Pesan Detail:</label>
+            <textarea id="pesan" name="pesan" rows="5" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="checkbox"
+              id="persetujuan"
+              name="persetujuan"
+              required
+            />
+            <label for="persetujuan"
+              >Saya setuju dengan syarat dan ketentuan.</label
+            >
+          </div>
+
+          <button type="submit">Kirim Pesan</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Akram Alfadli Tamir. All Rights Reserved.</p>
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/akram-alfadli-tamir-6048bb381/"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/Akram-Dwf">GitHub</a>
+        <a href="https://www.instagram.com/akrm_dwf?igsh=MXc1cXZrNHBsbHgzOA=="
+          >Instagram</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
