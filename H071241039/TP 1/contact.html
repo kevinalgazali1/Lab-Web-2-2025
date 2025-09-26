@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Mahasiswa - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Port<span>folio</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Informasi Kontak</h2>
+            <table>
+                <tr>
+                    <th>Media</th>
+                    <th>Detail</th>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>doraemon@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Nomor Telepon</td>
+                    <td>+62 854-7777-0987</td>
+                </tr>
+                <tr>
+                    <td>LinkedIn</td>
+                    <td><a href="https://www.linkedin.com/in/trivania-karoma-ab2629362/" target="_blank">Go Younjung</a></td>
+                </tr>
+                <tr>
+                    <td>Instagram</td>
+                    <td><a href="https://instagram.com/vaniaakaroma" target="_blank">@vaniaakaroma</a></td>
+                </tr>
+                <tr>
+                    <td>GitHub</td>
+                    <td><a href="https://github.com/doraemonn24" target="_blank">doraemonn24</a></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Hubungi Saya</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Nomor Telepon</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label>Tipe Pesan</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="messageType" value="question" required> Pertanyaan</label>
+                        <label><input type="radio" name="messageType" value="criticism"> Kritik</label>
+                        <label><input type="radio" name="messageType" value="suggestion"> Saran</label>
+                        <label><input type="radio" name="messageType" value="collaboration"> Kerjasama</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" required>
+                        Saya menyetujui pengolahan data pribadi saya sesuai dengan kebijakan privasi
+                    </label>
+                </div>
+                
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Go Younjung. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/trivania-karoma-ab2629362/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/doraemonn24" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/vaniaakaroma" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
