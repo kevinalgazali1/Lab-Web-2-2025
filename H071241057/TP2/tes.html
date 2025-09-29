@@ -1,0 +1,137 @@
+    <!DOCTYPE html>
+    <html lang="id" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Krev - Landing Page</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-900 text-white font-sans">
+
+        <nav class="bg-gray-800/50 backdrop-blur-sm sticky top-0 z-50">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-white">Krev</a>
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="#beranda" class="hover:text-indigo-400 transition-colors">Beranda</a></li>
+                    <li><a href="#tentang" class="hover:text-indigo-400 transition-colors">Tentang</a></li>
+                    <li><a href="#layanan" class="hover:text-indigo-400 transition-colors">Layanan</a></li>
+                    <li><a href="#kontak" class="hover:text-indigo-400 transition-colors"> Kontak</a></li>
+                </ul>
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAW0lEQVR4nO3Wuw2AMBAEUZfH0X9sS+j6GDog4WOjm9fBBCtta5IkPQTYgcH6BhBXIQf/kSVCAuisrwPb7S1JkiR9CG/8FFkiJLzxkiRJ78AbP0WWCAlvvCSpohPbFyzb89oCZgAAAABJRU5ErkJggg==" alt="menu--v6">
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden">
+                <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <li><a href="#beranda" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Beranda</a></li>
+                    <li><a href="#tentang" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Tentang</a></li>
+                    <li><a href="#layanan" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Layanan</a></li>
+                    <li><a href="#kontak" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <header id="beranda" class="relative text-center py-24 md:py-32 lg:py-48 bg-gray-900">
+                <div class="absolute inset-0 bg-indigo-900/30 opacity-50"></div>
+                <div class="container mx-auto px-6 relative">
+                    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">Solusi Digital Inovatif untuk Bisnis Anda</h1>
+                    <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">Kami membantu brand bertumbuh di dunia digital melalui strategi yang kreatif dan berbasis data.</p>
+                    <a href="#layanan" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform transform hover:scale-105 inline-block">
+                        Pelajari Lebih Lanjut
+                    </a>
+                </div>
+            </header>
+
+            <section id="tentang" class="py-20 bg-gray-800">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-3xl font-bold mb-4">Tentang Kami</h2>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                        <img src="https://assets.entrepreneur.com/content/3x2/2000/20151215195453-business-leader-group-front-leadership-team-professionals-businesspeople.jpeg" alt="Tim Krev" class="rounded-lg shadow-lg w-full md:w-1/3">
+                        <p class="max-w-2xl text-left text-gray-300">
+                            Krev adalah agensi yang berfokus pada penyediaan solusi digital menyeluruh. Dari pengembangan website, manajemen media sosial, hingga kampanye iklan digital, kami hadir untuk menjadi partner terpercaya dalam perjalanan digitalisasi bisnis Anda. Visi kami adalah menciptakan dampak positif melalui inovasi dan kreativitas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="layanan" class="py-20 bg-gray-900">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-3xl font-bold mb-12">Layanan Unggulan Kami</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-gray-800 p-8 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform">
+                            <div class="text-indigo-400 mb-4 flex justify-center">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADV0lEQVR4nO1ZS2sUQRAeowcfUVFvgg+8qeghOZio4DV6VVBEFEEUf0AEc+nuiWQfVZP4yC/IKQYUH5hzPAliiM+jICg+T5HsVE/AtHSShZlJ7+68NuvifLCn7a6uqqn6ur4Zy8qRI0eOHP8DGFPrBBC3He+Q1c5gDvUJlEr/ONBbjnTdakcIlGPVQBZ/IO9a7QbG1EaO9DsQSNnttdoNNnjn/EFwlJ+UUmusdgNHehIMhAZX1QEb57tZyetKY4M5artA8vyBMJAH6u4peV367DTn+oxVdgqUnwUS2WXvfFI73KFrgd5Amqm3XjjyNEea4yC/DqK7y0oDALVJIE376HJBoBxIYouDnAqUFcj+mkGgHFg+q1qCrzRRJApCN6EAGg9mcTGTQ3Ft6YwKpD/+hAyCu6fWeg5UMJz7gDHVETsQkzGO9DCJMYHyRuhpTDVKIke6vyIYIDvWwbbjXjRkZEaXmpUAHOi135aNdLXRHsdRGzjSy2ACaMF23AuRDhVl9xgHkqFAviVtOHtE7g85Mz80NLsjKtFwkF9CCaWGlygbob0C5Y/wRuZUeqyEEEC3QuXxOM5+G+e7BVIlVJrfWdHdbdxQKqnNeohb8ShTUO4SYciPwT7zzsa1w0Ce8bPYsm/v2R21JbBwYkKtFUBPDc3Fkwax6AC6R0NkMZe0zwQQN/j3TPvuX3TbsGg87RzEUd4L2R1LakvVvg6KS4cBXTb8OZ34AvIJKF3LgZHEob6UNtcLkC/C/tpIV5oWiAB5MtSgP3VwTQukWaUVFlC6zKwUUDVKiwOVmtbszRBQwtDsHGky0OxV+hVI77Kg36wFFDPQr0D6UCyqrU29ELMUULbhQhQgf7Fh2ld3I0P3eJoRpVBQ28ICyh72DiYJgplHFE847olIBji4lwxMNsNGVWfWAirO0Cj8DBUVHAga3qQGCJTPowqouGM8ByokYZ4OjvQojrG4AiqmFppslMTawYyqToH0xjgSGB2Q/XEEVB07N/0J0T5EKeu60BnVo4YmAN07WQuoWmCOPCWAZiMxVHSjlZ5GFKxf7YTZRb8CSnVu2TssoHLEWk2kFVD/BFRGAqrlyFJAtRRZCqiWQn+s8ev9tAKq5dCf0/S4nVZA5ciRI0cOq13wF5U4U2WP7jlLAAAAAElFTkSuQmCC" alt="source-code">
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                            <p class="text-gray-400">Desain dan pengembangan website modern, responsif, dan SEO-friendly untuk meningkatkan kehadiran online Anda.</p>
+                        </div>
+                        <div class="bg-gray-800 p-8 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform">
+                            <div class="text-indigo-400 mb-4 flex justify-center">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA7ElEQVR4nO3aQQrCMBRF0WxJN9jGmfRtRjelbqBJR08yEVGwgtjEei9kVvn9p+AoIRARERF9ULeftr3SsR/yOSr7m6fMKLPKzNDM8kMav734M0Qam0DolY5LL387QzrU3j9E5Us1AOVLCwC+P2ubNxsAAsAACAADIAAMgADw2ubNBoAAMAACwAAIAAMgALy2ebMBIAAMgAAwAALAAAgAr23ebAAIAAMgAAyAAPA7L/T4/Ke/D7WLAGQAIgCZP8H4rwD9AveDX5xT7f3D31+V7Spelt5p2oQW6vbTtnyNpa7Ll1nNLE9EREThV7sCvpwT72TaPqUAAAAASUVORK5CYII=" alt="smartphone--v1">
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Social Media</h3>
+                            <p class="text-gray-400">Manajemen konten dan interaksi di berbagai platform media sosial untuk membangun komunitas yang loyal.</p>
+                        </div>
+                        <div class="bg-gray-800 p-8 rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform">
+                            <div class="text-indigo-400 mb-4 flex justify-center">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADYElEQVR4nO2azW7TQBCAlwLi7zlAiAeAl0BwhZZw44xoqRBw2FmfaGYiFCiUUkpBCIT6Clz7CnChSIgLByRAqvBOuCzaJmnttZM41HYc2yOtlMZJ19/n2d+sEE4gmlOqyZcV8Twg3ylJuSWJL0lpTopBYYw5BMiLQPq3IjalLKh/AfKCZQ3BS2lmFOp3E7/BnAqQfhuSAMiL4Q/wNhCvKtIPylAsi2VyRMzvtflg2gPyWrttjomShWUC5PVgc5C2T7Cdw/6b/LmM8P2wbAr5S59XEl8Uivh2IPVXRMmj27QDzUChhkBagNs5AvqN/eHEb9j3kl4vYkR41RABXsu/HulB0W8kvT71AgD9hgvotfxrSa9PvQApzYwF6g8n9rXbBIZdn3oBZYxaANYCYLAA4g8FWLllWizjMAGmUgVrARASAMRbk1655bAy3BqcAVj1ThDLLyA4e/XsrLVqAvqz171Zq6qYgEioWoCuBahaANcCVC2AawGqFqBrAWJKI7pFP6r0tvBVSQTEbdGPKmC38MsiIG6LfvwNEZxeAe4WfWgPAPUSkP5ZagFDD34QPyl9BgyCV8TPw9D8I3cBUprjsvX3vMI/F1otcyKLOmLqnHHh7a/fQFrlJsB0zx0thM4dod4B4vtZ/oTWHRJ5zYXfzYi8tsRMt+2tDB6C+M3mpjkssnnyL5y0f9o/E5SLABMDD6g/KdIfs5QQB287wOCBqKgA4nuBG7qbCTzxir253dSMiElHQi/t150nv+weiYsIkMRneqfCtr0lPn1QeIX8LK7tBT+TtoTek3/p1Ps4ch4wy6m/SQCfhYQ4eIX8KK7e2G3xvOHTlNBL+41wvbo9rN7ItnhK8MsOyFqSfx73XYX6vZTmSMIn/2oc6amHOQD8QSTEw+uHucODM8ceF/5/JNgmEgefGlje8ONIsPCA/Hri8Mrp8OzfaaTfoI5xddUctcW+diZXrXSoCgA/YiL1FZC/hafTmtKqszDwydcRGtOuszDwwTqB+GZo/U78HZr6RlZ1FgY+GLYTlMjnJPHZLFaPI8N2NJOCL0Qo1DuVhbehUHtdCZoqB19HlcLsDjv+HFDnauVS3ThDndfszIqqhIkZ5z3sXBFVCa/Zma30OA/kz1UWXvSagE15WyoHL4T4B42Q3aYyj9lLAAAAAElFTkSuQmCC" alt="web-marketing--v2">
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Digital Marketing</h3>
+                            <p class="text-gray-400">Strategi iklan berbayar (SEM & Social Media Ads) yang terukur untuk menjangkau target audiens yang tepat.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="kontak" class="py-20 bg-gray-800">
+                <div class="container mx-auto px-6 max-w-xl text-center">
+                    <h2 class="text-3xl font-bold mb-4">Hubungi Kami</h2>
+                    <p class="text-gray-400 mb-8">Isi form di bawah untuk konsultasi gratis atau mendapatkan informasi lebih lanjut mengenai layanan kami.</p>
+                    
+                    <form class="text-left">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-300 mb-2">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" class="w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-3 text-white focus:outline-none focus:border-indigo-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-300 mb-2">Alamat Email</label>
+                            <input type="email" id="email" name="email" class="w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-3 text-white focus:outline-none focus:border-indigo-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-300 mb-2">Pesan</label>
+                            <textarea id="message" name="message" rows="4" class="w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-3 text-white focus:outline-none focus:border-indigo-500"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full transition-colors w-full">
+                                Kirim Pesan
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="bg-gray-900 border-t border-gray-700">
+            <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+                <div class="flex justify-center space-x-4 mb-4">
+                    <a href="#" class="hover:text-white">Facebook</a>
+                    <a href="#" class="hover:text-white">Instagram</a>
+                    <a href="#" class="hover:text-white">LinkedIn</a>
+                </div>
+                <p>&copy; 2025 Krev. Semua Hak Cipta Dilindungi.</p>
+            </div>
+        </footer>
+
+        <script>
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
+
+    </body>
+    </html>
