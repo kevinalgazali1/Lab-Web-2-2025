@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardew Valley</title>
+     <link rel="icon" href="assets/Brown_Chicken.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class=" bg-[#fbeea0] text-white">
+  <header>
+  <nav class="fixed w-full top-0 left-0 z-50 flex items-center justify-center flex-wrap bg-[#163b85] p-4">
+      <div class="text-xl flex gap-16">
+        <a href="#title" class="text-white hover:text-[#f9ec88] font-semibold">Title</a>
+        <a href="#about" class="text-white hover:text-[#f9ec88] font-semibold">About</a>
+        <a href="#features" class="text-white hover:text-[#f9ec88] font-semibold">Features</a>
+        <a href="#gallery" class="text-white hover:text-[#f9ec88] font-semibold">Gallery</a>
+        <a href="#contact" class="text-white hover:text-[#f9ec88] font-semibold">Contact</a>
+      </div>
+    </nav>
+    <section id="title" class="relative w-full h-300 flex items-center justify-center">
+      <img src="assets/LatarTitle.svg" alt="Background Title" class="absolute inset-0 w-full h-full object-top object-contain z-10 select-none pointer-events-none">
+      <div class="absolute inset-0 flex items-center justify-center z-20">
+        <img src="assets/Main_Logo.png" alt="Main Logo" class="h-250 w-250 object-contain absolute drop-shadow-lg z-30">
+      </div>
+    </section>
+  </header>
+  <main class="pt-20 bg-[#fbeea0]">
+  <img id="about" src="assets/About.png" alt="About" class="w-100 h-auto mb-4 mt-16 justify-center flex mx-auto py-7 relative z-10">
+  <section class="relative w-full bg-[#fbeea0] text-white overflow-hidden">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[120%] w-10 bg-[#fbeea0] transform -rotate-12 z-20 hidden md:block shadow-[inset_0_0_0_7px_#884e17]"></div>
+
+        <div class="relative z-10 flex flex-col md:flex-row shadow-[inset_0_0_0_8px_#884e17]">
+          <div class="flex flex-col w-full md:w-1/2 p-8 md:p-12 relative">
+                <img src="assets/Descriptionfont.png" alt="Deskripsi" class="absolute top-8 left-8 w-75 h-auto">
+                <div class="flex flex-row items-start py-7 mt-20">
+                    <p class="text-black text-lg w-5/6">
+                        Stardew Valley is an open-ended country-life RPG! You’ve inherited your grandfather’s old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home? It won’t be easy. Ever since Joja Corporation came to town, the old ways of life have all but disappeared. The community center, once the town’s most vibrant hub of activity, now lies in shambles. But the valley seems full of opportunity.
+                    </p>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 p-8 md:p-12 relative">
+                <img src="assets/Historyfont.png" alt="Histori" class="absolute top-8 right-8 w-75 h-auto">
+                <div class="flex flex-row justify-end items-end py-7 mt-20 w-full">
+                  <p class="text-black text-lg text-right mb-6 w-full md:w-5/6">
+                    Stardew Valley was created by game developer Eric Barone, under the alias of ConcernedApe. During the four years he spent solo-developing it, he taught himself the necessary skills to produce the game’s music, art, programming, and design. The game was released on PC on February 26, 2016, and within two months passed 1 million copies sold.
+                  </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="features" class="bg-[#fbeea0] flex flex-col items-center justify-center pt-4 pb-12">
+      <img src="assets/Featuresfont.png" alt="Features" class="w-125 h-auto mb-4 mt-0">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+
+            <div class="flex flex-col md:flex-row items-start gap-6 bg-[#fbeea0] p-6 rounded-lg hover:shadow-lg transition-shadow duration-300 shadow-[inset_0_0_0_8px_#884e17]">
+                <img src="assets/Dreamfarm.png" alt="Farm building" class="hidden md:block w-32 h-32 object-cover rounded-md flex-shrink-0">
+                <div>
+                    <h3 class="text-2xl text-black font-semibold mb-2">Create the farm of your dreams:</h3>
+                    <p class="text-lg text-black">Turn your overgrown fields into a lively and bountiful farm! Design your layout, plant diverse crops, raise happy animals, and transform your land into a thriving agricultural paradise.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-start gap-6 bg-[#fbeea0] p-6 rounded-lg hover:shadow-lg transition-shadow duration-300 shadow-[inset_0_0_0_8px_#884e17]">
+                <img src="assets/BarnAnimal.png" alt="Fishing" class="hidden md:block w-32 h-32 object-cover rounded-md flex-shrink-0">
+                <div>
+                    <h3 class="text-2xl text-black font-semibold mb-2">Learn to live off the land:</h3>
+                    <p class="text-lg  text-black">Raise animals, go fishing, tend to crops, craft items, or do it all! The choice is yours. Master various skills like farming, mining, foraging, and combat to truly thrive in the valley.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-start gap-6 bg-[#fbeea0] p-6 rounded-lg hover:shadow-lg transition-shadow duration-300 shadow-[inset_0_0_0_8px_#884e17]">
+                <img src="assets/Comunity.webp" alt="Town scene" class="hidden md:block w-32 h-32 object-cover rounded-md flex-shrink-0">
+                <div>
+                    <h3 class="text-2xl text-black font-semibold mb-2">Become a part of the local community:</h3>
+                    <p class="text-lg  text-black">Pelican Town is home to over 30 residents you can befriend! Attend festivals, complete quests, and help restore the Community Center to bring the town back to life.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-start gap-6 bg-[#fbeea0] p-6 rounded-lg hover:shadow-lg transition-shadow duration-300 shadow-[inset_0_0_0_8px_#884e17]">
+                <img src="assets/Wedding.png" alt="Marriage proposal" class="hidden md:block w-32 h-32 object-cover rounded-md flex-shrink-0">
+                <div>
+                    <h3 class="text-2xl text-black font-semibold mb-2">Meet someone special!:</h3>
+                    <p class="text-lg text-black">With 12 townsfolk to date, you may even find someone to start a family with! Build relationships, get married, and experience a unique family life on your farm.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-start gap-6 bg-[#fbeea0] p-6 rounded-lg hover:shadow-lg transition-shadow duration-300 shadow-[inset_0_0_0_8px_#884e17]">
+                <img src="assets/Cave.png" alt="Mineshaft exploration" class="hidden md:block w-32 h-32 object-cover rounded-md flex-shrink-0">
+                <div>
+                    <h3 class="text-2xl text-black font-semibold mb-2">Explore vast, mysterious caves:</h3>
+                    <p class="text-lg  text-black">Encounter dangerous monsters & valuable treasures deep underground! Delve into the mines to gather precious ores and gems, but be prepared for combat.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-start gap-6 bg-[#fbeea0] p-6 rounded-lg hover:shadow-lg transition-shadow duration-300 shadow-[inset_0_0_0_8px_#884e17]">
+                <img src="assets/CharCustomize.jpg" alt="Character customization" class="hidden md:block w-32 h-32 object-cover rounded-md flex-shrink-0">
+                <div>
+                    <h3 class="text-2xl text-black font-semibold mb-2">Customize:</h3>
+                    <p class="text-lg  text-black">There are hundreds of character & home decoration options to choose from! Personalize your farmer's appearance and design your farmhouse interior to reflect your unique style.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <a href="#contact" class="text-white transition-transform duration-[180ms] hover:scale-[1.12] font-semibold mb-4 mt-0 flex justify-center">
+      <img src="assets/Furthermore.png" alt="Furthermore" class="w-64 h-auto">
+    </a>
+    <section id="gallery">
+      <div class="flex flex-wrap justify-center gap-8 bg-[#fbeea0]">
+        <div class="w-full text-center mb-4 flex flex-col items-center justify-center pt-4 pb-12">
+          <img src="assets/Galeryfont.png" alt="Gallery" class="w-125 h-auto mb-4 mt-0">
+        </div>
+        <img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png"
+          alt="Farmer tending crops in a lush green field with a wooden farmhouse and trees in the background. Peaceful and vibrant atmosphere."
+          class="rounded-lg shadow-lg w-full max-w-md object-cover" />
+        <img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/NightMarket-1-1.png"
+          alt="Night market scene with colorful stalls and villagers walking along the waterfront. Festive and lively mood under a starry sky."
+          class="rounded-lg shadow-lg w-full max-w-md object-cover" />
+        <img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/Multiplayer_Screenshot2-1.png"
+          alt="Multiple players gathered near a barn and crops, collaborating on farm tasks. Friendly and cooperative environment."
+          class="rounded-lg shadow-lg w-full max-w-md object-cover" />
+        <img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_12-1.png"
+          alt="Interior of a cozy farmhouse with furniture and decorations. Warm and inviting setting."
+          class="rounded-lg shadow-lg w-full max-w-md object-cover" />
+        <img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_4.png"
+          alt="Fishing at a tranquil river surrounded by trees and grassy banks. Calm and relaxing atmosphere."
+          class="rounded-lg shadow-lg w-full max-w-md object-cover" />
+        <img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_11.png"
+          alt="Villagers gathered in the town square for a festival with banners and decorations. Joyful and communal feeling."
+          class="rounded-lg shadow-lg w-full max-w-md object-cover" />
+        <img src="https://www.stardewvalley.net/wp-content/uploads/2018/12/StardewValley_5.png"
+          alt="Farm animals grazing in a fenced area with a barn and silo nearby. Serene and pastoral scene."
+          class="rounded-lg shadow-lg w-full max-w-md object-cover" />
+      </div>
+    </section>
+    <section id="contact" class="w-full text-center mb-6 flex flex-col items-center justify-center pt-4 pb-12">
+      <img src="assets/Contactfont.png" alt="Contact" class="w-125 h-auto mb-4 mt-0">
+      <form class="w-full mx-auto bg-[#fbeea0] rounded-xl p-8 flex flex-col gap-6 shadow-[inset_0_0_0_7px_#884e17]">
+        <div>
+          <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+          <input type="text" id="name" name="name" required class="w-full px-4 py-2 border text-black border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#163b85] shadow-[inset_0_0_0_7px_#884e17]">
+        </div>
+        <div>
+          <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+          <input type="email" id="email" name="email" required class="w-full px-4 py-2 border text-black border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#163b85] shadow-[inset_0_0_0_7px_#884e17]">
+        </div>
+        <div>
+          <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+          <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border text-black border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#163b85] shadow-[inset_0_0_0_7px_#884e17]"></textarea>
+        </div>
+        <button type="submit" class="bg-[#163b85] text-white font-bold py-2 px-6 rounded hover:bg-[#2a4fa7] transition">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer class="w-full bg-[#163b85] py-8 px-6 flex flex-col items-center text-center bottom-0">
+    <p class="mb-2 text-base tracking-[0.5px] text-white">&copy; 2025 Jean Patra Paeloran. All rights reserved.</p>
+    <div class="flex flex-wrap items-center gap-[18px]">
+      <a href="https://youtube.com/@jeanjrg6409" class="flex items-center text-white no-underline text-base font-medium tracking-[0.5px] transition-colors duration-200 hover:text-[#f9ec88]">
+        <img src="assets/youtube.png" alt="YouTube Icon" class="w-7 h-7 object-contain mr-2 drop-shadow-[0_1px_4px_rgba(0,0,0,0.10)] transition-transform duration-[180ms] hover:scale-[1.12]">
+        <span>Youtube</span>
+      </a>
+      <a href="https://www.instagram.com/jeanjrg123" class="flex items-center text-white no-underline text-base font-medium tracking-[0.5px] transition-colors duration-200 hover:text-[#f9ec88]">
+        <img src="assets/instagram.png" alt="Instagram Icon" class="w-7 h-7 object-contain mr-2 drop-shadow-[0_1px_4px_rgba(0,0,0,0.10)] transition-transform duration-[180ms] hover:scale-[1.12]">
+        <span>Instagram</span>
+      </a>
+      <a href="https://github.com/Jeanjrg" class="flex items-center text-white no-underline text-base font-medium tracking-[0.5px] transition-colors duration-200 hover:text-[#f9ec88]">
+        <img src="assets/github.png" alt="GitHub Icon" class="w-7 h-7 object-contain mr-2 drop-shadow-[0_1px_4px_rgba(0,0,0,0.10)] transition-transform duration-[180ms] hover:scale-[1.12]">
+        <span>GitHub</span>
+      </a>
+      <a href="https://www.tiktok.com/@jeanjrg123" class="flex items-center text-white no-underline text-base font-medium tracking-[0.5px] transition-colors duration-200 hover:text-[#f9ec88]">
+        <img src="assets/tiktok.png" alt="TikTok Icon" class="w-7 h-7 object-contain mr-2 drop-shadow-[0_1px_4px_rgba(0,0,0,0.10)] transition-transform duration-[180ms] hover:scale-[1.12]">
+        <span>Tiktok</span>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
