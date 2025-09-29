@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact - Syahrani Zakiyah Nurfaizah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo"><div class="text"><strong>SZN</strong></div>
+      <div style="font-size:14px">Portfolio</div>
+    </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Informasi Kontak</h2>
+      <table style="width:100%; border-collapse:collapse;">
+        <tr><th style="text-align:left; width:160px">Email</th><td>:</td><td>syahranizakiyah0812@gmail.com</td></tr>
+        <tr><th style="text-align:left">Nomor Telepon</th><td>:</td><td>+62 895 0452 0333</td></tr>
+        <tr><th style="text-align:left">LinkedIn</th><td>:</td><td><a href="#">linkedin.com/in/nama</a></td></tr>
+        <tr><th style="text-align:left">Instagram</th><td>:</td><td><a href="https://www.instagram.com/zakiyah.nrf">zakiyah.nrf</a></td></tr>
+        <tr><th style="text-align:left">GitHub</th><td>:</td><td><a href="https://github.com/zakiyah10">zakiyah10</a></td></tr>
+      </table>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <h2>Form Kontak</h2>
+      <!-- Form action '#' placeholder. Untuk tugas: gunakan method="post" jika backend ada -->
+      <form action="#" method="post" novalidate>
+        <label for="name">Nama</label>
+        <input id="name" name="name" type="text" placeholder="Nama lengkap" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="nama@gmail.com" required>
+
+        <label for="phone">Nomor Telepon</label>
+        <input id="phone" name="phone" type="tel" placeholder="+62 xxx-xxxx-xxxx" required>
+
+        <label>Tipe Pesan</label>
+        <div class="option">
+          <input type="radio" name="tipe" id="pertanyaan" value="pertanyaan">
+          <label for="pertanyaan">Pertanyaan</label>
+        </div>
+        <div class="option">
+          <input type="radio" name="tipe" id="kritik" value="kritik">
+          <label for="kritik">Kritik</label>
+        </div>
+        <div class="option">
+          <input type="radio" name="tipe" id="saran" value="saran">
+          <label for="saran">Saran</label>
+        </div>
+        <div class="option">
+          <input type="radio" name="tipe" id="kerjasama" value="kerjasama">
+          <label for="kerjasama">Kerjasama</label>
+        </div>
+        <label for="message">Pesan</label>
+        <textarea id="message" name="message" placeholder="Tulis pesan Anda..." required></textarea>
+
+        <label style="display:flex;gap:8px;align-items:center">
+          <input type="checkbox" id="agree" name="agree" required> Saya setuju data yang dikirim dapat diproses.
+        </label>
+
+        <div style="margin-top:12px">
+          <button type="submit">Kirim Pesan</button>
+        </div>
+      </form>
+    </section>
+
+    <div class="card" style="margin-top:20px">
+      <p style="margin:0">Atau email langsung ke <a href="https://syahranizakiyah0812@gmail.com">syahranizakiyah0812@gmail.com</a></p>
+      <p style="margin:0">Kembali ke <a href="index.html">Home</a></p>
+    </div>
+
+    <footer class="text" style="margin-top:20px">
+      <center>
+      <p style="margin:0">&copy; 2025 Syahrani Zakiyah Nurfaizah | <a href="https://www.instagram.com/zakiyah.nrf/">Instagram</a> • <a href="https://github.com/zakiyah10">GitHub</a></p>
+      </center>
+    </footer>
+  </main>
+</body>
+</html>
