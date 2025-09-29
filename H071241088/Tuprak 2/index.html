@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HIMASFO - Himpunan Mahasiswa Sistem Informasi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800">
+
+ 
+
+  <!-- Header -->
+  <header class="sticky top-0">
+     <!-- Navbar -->
+    <nav class="text-black p-4  backdrop-blur-sm bg-blue-500 z-30">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">HIMASFO</h1>
+            <ul class="flex space-x-6">
+            <li><a href="#" class="hover:text-gray-300">Beranda</a></li>
+            <li><a href="#tentang" class="hover:text-gray-300">Tentang</a></li>
+            <li><a href="#program" class="hover:text-gray-300">Program</a></li>
+            <li><a href="#testimoni" class="hover:text-gray-300">Testimoni</a></li>
+            <li><a href="#kontak" class="hover:text-gray-300">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-white py-20">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-8 px-4">
+      <div class="md:w-1/2">
+        <h3 class="text-2xl font-semibold mb-4">Gabung HIMASFO Sekarang</h3>
+        <p class="mb-6">Jadilah bagian dari komunitas yang aktif, kritis, dan kreatif di Sistem Informasi Universitas.</p>
+        <a href="#kontak" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-700">Gabung Sekarang</a>
+      </div>
+      <div class="md:w-1/2">
+        <img src="logo.png" alt="Mahasiswa" class="rounded shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang HIMASFO -->
+  <section id="tentang" class="bg-gray-100 py-16 px-4">
+    <div class="container mx-auto text-center max-w-3xl">
+      <h3 class="text-2xl font-bold mb-4">Tentang HIMASFO</h3>
+      <p class="text-gray-700">
+        HIMASFO adalah wadah organisasi bagi seluruh mahasiswa Sistem Informasi untuk mengembangkan minat, bakat, dan kompetensi akademik maupun non-akademik. 
+        Kami menjunjung tinggi semangat kolaborasi dan kontribusi nyata untuk jurusan dan masyarakat.
+      </p>
+    </div>
+  </section>
+
+  <!-- Program HIMASFO-->
+  <section id="program" class="py-16 bg-white px-4">
+    <div class="container mx-auto">
+      <h3 class="text-2xl font-bold text-center mb-10">Program Unggulan HIMASFO</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-blue-100 p-6 rounded shadow hover:scale-110 transition-all">
+          <h4 class="font-semibold mb-2">Study Club</h4>
+          <p>Kelompok belajar rutin untuk mata kuliah dan topik teknologi.</p>
+        </div>
+        <div class="bg-blue-100 p-6 rounded shadow hover:scale-110 transition-all">
+          <h4 class="font-semibold mb-2">HIMASFO Talks</h4>
+          <p>Diskusi terbuka bersama alumni dan profesional di bidang SI.</p>
+        </div>
+        <div class="bg-blue-100 p-6 rounded shadow hover:scale-110 transition-all">
+          <h4 class="font-semibold mb-2">Pengabdian Masyarakat</h4>
+          <p>Proyek sosial untuk membantu masyarakat lewat teknologi.</p>
+        </div>
+        <div class="bg-blue-100 p-6 rounded shadow hover:scale-110 transition-all">
+          <h4 class="font-semibold mb-2">Riset & Inovasi</h4>
+          <p>Tim pengembangan ide dan proyek digital mahasiswa SI.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testimoni" class="py-16 bg-gray-100 px-4">
+    <div class="container mx-auto text-center">
+      <h3 class="text-2xl font-bold mb-10">Testimoni Anggota</h3>
+      <div class="flex flex-col md:flex-row gap-8 justify-center">
+        <div class="bg-white p-6 rounded shadow max-w-md mx-auto">
+          <p>"HIMASFO membuat saya lebih percaya diri dalam public speaking dan kerja tim."</p>
+          <p class="mt-2 font-semibold text-blue-700">– Sarah, Angkatan 2022</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow max-w-md mx-auto">
+          <p>"Saya belajar banyak tentang manajemen acara dan kepemimpinan di HIMASFO."</p>
+          <p class="mt-2 font-semibold text-blue-700">– Reza, Angkatan 2021</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Kontak -->
+  <section id="kontak" class="py-16 bg-white px-4">
+    <div class="container mx-auto max-w-xl">
+      <h3 class="text-2xl font-bold mb-6 text-center">Gabung atau Hubungi Kami</h3>
+      <form class="space-y-4">
+        <input type="text" placeholder="Nama Lengkap" class="w-full p-3 border rounded">
+        <input type="email" placeholder="Email Aktif" class="w-full p-3 border rounded">
+        <input type="text" placeholder="NIM" class="w-full p-3 border rounded">
+        <textarea rows="4" placeholder="Alasan Bergabung" class="w-full p-3 border rounded"></textarea>
+        <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-800">Kirim</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-500 text-white py-6 mt-10">
+    <div class="container mx-auto text-center space-y-2">
+      <p>Ikuti kami di Instagram: <a href="nda ada" class="underline"> @himasfo_unhas</a></p>
+      <p>Email: himasfo@unhas.ac.id</p>
+      <p>&copy; 2025 HIMASFO. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
