@@ -1,0 +1,329 @@
+body {
+  background-image: url(assets/backgrounduno.png);
+  text-align: center;
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  text-shadow: 3px 3px 6px black;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 24px;
+  text-shadow: 2px 2px 4px black;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  margin: 30px 0;
+}
+
+.card-area {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  min-width: 300px;
+}
+
+.cards-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  min-height: 120px;
+  margin: 10px 0;
+}
+
+.cards-display img {
+  width: 80px;
+  height: 120px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border-radius: 8px;
+}
+
+.cards-display img:hover {
+  transform: translateY(-10px);
+}
+
+.center-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.deck-area {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.deck-card, .discard-pile {
+  position: relative;
+}
+
+.deck-card img, .discard-pile img {
+  width: 100px;
+  height: 150px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.deck-card img:hover {
+  transform: scale(1.05);
+}
+
+#current-color-display {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  text-shadow: 2px 2px 4px black;
+}
+
+.color-selector {
+  display: none;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.color-selector button {
+  width: 60px;
+  height: 60px;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.color-red { 
+  background-color: #E74C3C; 
+}
+
+.color-blue { 
+  background-color: #3498DB; 
+}
+
+.color-green { 
+  background-color: #2ECC71; 
+}
+
+.color-yellow { 
+  background-color: #F1C40F; 
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  margin: 5px;
+  background-color: #545454;
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#result {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 20px 0;
+  text-shadow: 3px 3px 6px black;
+  min-height: 40px;
+}
+
+.game-info {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* New CSS for added features */
+.screen-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  border: 3px solid white;
+  min-width: 400px;
+}
+
+.balance-info {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+.betting-controls {
+  margin: 20px 0;
+}
+
+.betting-controls input {
+  padding: 10px;
+  font-size: 18px;
+  margin: 10px;
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.bet-buttons {
+  margin: 15px 0;
+}
+
+.bet-quick {
+  padding: 8px 15px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.balance-display {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.uno-timer {
+  display: none;
+  background: #ff0000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px auto;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.warning {
+  color: #ff9900;
+  font-weight: bold;
+}
+
+.penalty {
+  color: #ff0000;
+  font-weight: bold;
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+/* Perbaikan ukuran tombol */
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 2px;
+  background-color: #545454;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 120px;
+  max-width: 200px;
+}
+
+/* Tombol khusus untuk UNO */
+#btn-uno {
+  background: linear-gradient(45deg, #FF0000, #FF8800);
+  font-weight: bold;
+}
+
+#btn-call-uno {
+  background: linear-gradient(45deg, #0099FF, #00FF99);
+  font-weight: bold;
+}
+
+/* Highlight kartu yang bisa dimainkan */
+.cards-display img.playable {
+  border: 3px solid #00FF00;
+  box-shadow: 0 0 15px #00FF00;
+}
+
+.cards-display img.playable:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 0 20px #00FF00;
+}
+
+/* Perbaikan layout untuk mobile */
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button-container button {
+    width: 90%;
+    max-width: 250px;
+  }
+  
+  .game-container {
+    margin: 10px 0;
+  }
+  
+  .card-area {
+    padding: 10px;
+    min-width: 250px;
+  }
+  
+  .overlay-content {
+    min-width: 300px;
+    padding: 20px;
+  }
+}
