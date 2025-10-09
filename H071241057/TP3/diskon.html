@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let harga = prompt("Masukkan harga barang: ");
+        let kategori = prompt("Masukkan kategori barang (elektronik, pakaian, makanan,lainnya): ");
+        let diskon = 1;
+        let dis = 0;
+
+        switch (kategori.toLowerCase()) {
+            case "elektronik":
+                diskon = 0.9;
+                dis =10;
+                break;
+            case "pakaian":
+                diskon = 0.8;
+                dis =20;
+                break;
+            case "makanan":
+                diskon = 0.95;
+                dis =5
+                break;
+            default:
+                diskon = 1;
+        }
+        let hargaAkhir = harga * diskon;
+        document.write("Harga sebelum diskon: " + harga + "<br>");
+        document.write("Diskon: " + dis + "%<br>");
+        document.write("Harga akhir setelah diskon: " + hargaAkhir);    
+    </script>
+
+</body>
+</html>
+

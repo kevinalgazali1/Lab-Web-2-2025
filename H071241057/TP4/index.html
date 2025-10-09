@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNO Game</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+    <main>
+        <section id="start-menu" class="screen active">
+            <div class="menu-container">
+                <h1>UNO Game</h1>
+                <p>Kalahkan Bot dan menangkan taruhannya!</p>
+                <button id="start-btn" class="btn">Mulai Permainan</button>
+            </div>
+        </section>
+
+        <section id="betting-screen" class="screen">
+            <div class="menu-container">
+                <h2>Pasang Taruhan Anda</h2>
+                <p class="balance-info">Saldo Anda: $<span id="balance-display">5000</span></p>
+                <div class="bet-controls">
+                    <label for="bet-amount">$</label>
+                    <input type="number" id="bet-amount" value="100" min="100" step ="50">
+                </div>
+                <p id="bet-error" class="error-message"></p>
+                <button id="place-bet-btn" class="btn">Mulai Ronde</button>
+            </div>
+        </section>
+
+        <section id="game-screen" class="screen">
+            <div id="game-info-bar">
+                <p>Saldo: $<span id="game-balance"></span></p>
+                <p>Taruhan: $<span id="game-bet"></span></p>
+            </div>
+
+            <div id="game-table">
+                <div id="bot-area" class="player-area">
+                    <h3 class="player-name">Bot</h3>
+                    <div id="bot-hand" class="hand-container">
+                        </div>
+                </div>
+
+                <div id="center-area">
+                    <img src="img/back.png" alt="Deck" id="deck-card" class="card">
+                    <div id="discard-pile">
+                        </div>
+                </div>
+
+                <div id="player-area" class="player-area">
+                    <button id="uno-btn" disabled>UNO</button>
+                    <div id="player-hand" class="hand-container">
+                        </div>
+                    <h3 id="turn-indicator" class="player-name">Giliran Anda</h3>
+                </div>
+            </div>
+            </section>
+
+        <section id="game-over-screen" class="screen">
+            <div class="menu-container">
+                <h2>Game Over</h2>
+                <p>Sayang sekali, saldo Anda telah habis.</p>
+                <button id="restart-btn" class="btn">Mulai Lagi</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="color-picker-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3>Pilih Warna</h3>
+            <div class="color-picker">
+                <div class="color-box" data-color="red" style="background-color: red;"></div>
+                <div class="color-box" data-color="green" style="background-color: green;"></div>
+                <div class="color-box" data-color="blue" style="background-color: blue;"></div>
+                <div class="color-box" data-color="yellow" style="background-color: yellow;"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="toast-container"></div>
+
+    <div id="result-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2 id="result-title"></h2>
+            <p id="result-message"></p>
+            <button id="result-continue-btn" class="btn">Lanjutkan</button>
+        </div>
+    </div>
+
+    <div id="decision-modal" class="modal-overlay">
+        <div class="modal-content">
+            <p id="decision-message"></p>
+            <div id="decision-card-preview"></div>
+            <div class="decision-buttons">
+                <button id="play-card-btn" class="btn">Mainkan Kartu</button>
+                <button id="keep-card-btn" class="btn btn-danger">Simpan Kartu</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script> </body>
+</html>
