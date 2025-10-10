@@ -1,0 +1,288 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a3a1a; /* Warna hijau tua yang lebih soft */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    position: relative;
+}
+
+/* Screen Management */
+.screen {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background: radial-gradient(circle, #2a522a, #1a3a1a);
+}
+
+.screen.active {
+    display: flex;
+}
+
+.menu-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* Buttons and Inputs */
+.btn {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #f4d03f;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #f7dc6f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.btn.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+.btn.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 100px;
+}
+
+.error-message {
+    color: #ffbaba;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+/* ================== GAME SCREEN STYLING ================== */
+#game-screen {
+    justify-content: space-between;
+    padding: 0;
+}
+
+#game-info-bar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 15px;
+    border-radius: 8px;
+    z-index: 10;
+    display: flex;
+    gap: 20px;
+}
+
+#game-table {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hand-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 125px;
+    padding: 10px;
+    flex-wrap: nowrap; /* Mencegah kartu turun baris */
+}
+
+.card {
+    width: 80px;
+    height: 120px;
+    margin: 0 -25px; /* Kartu saling menumpuk */
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+#player-hand .card:hover {
+    transform: translateY(-20px) scale(1.1);
+    z-index: 100;
+}
+
+#center-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Styling dasar untuk area pemain */
+.player-area {
+    width: 100%;
+    padding: 15px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.7;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Style untuk area pemain yang sedang aktif */
+.player-area.active-turn {
+    border-color: #00BFFF;
+    box-shadow: 0 0 15px #00BFFF;
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+.player-name {
+    margin: 0 0 10px 0;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px #000;
+}
+
+/* Posisi baru tombol UNO di dalam area pemain */
+#player-area #uno-btn {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    z-index: 100;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #e74c3c;
+    color: white;
+    border: 3px solid white;
+    display: none; /* Diatur oleh JS */
+}
+
+/* ================== MODALS & NOTIFICATIONS ================== */
+
+/* Styling Gabungan untuk SEMUA Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none; /* Diubah ke 'flex' oleh JS */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Styling Gabungan untuk SEMUA Modal Content */
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    color: #333;
+}
+
+.modal-content h2, .modal-content h3 {
+    margin-top: 0;
+}
+
+/* Styling spesifik untuk Color Picker */
+.color-picker {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.color-box {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: 3px solid #333;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+}
+
+/* Styling spesifik untuk Modal Keputusan (Decision) */
+.decision-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#decision-card-preview img {
+    width: 80px;
+    margin-top: 15px;
+}
+
+/* Styling untuk Toast Notification */
+#toast-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.toast-message {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    animation: fadeInOut 3s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; transform: translateY(20px); }
+    15%, 85% { opacity: 1; transform: translateY(0); }
+}
