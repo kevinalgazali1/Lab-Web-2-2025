@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Permainan UNO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-over-screen" class="screen-overlay">
+      <div class="overlay-content">
+        <h1>😵 GAME OVER 😵</h1>
+        <p>Saldo Anda telah habis!</p>
+        <button id="btn-restart-game">MAIN LAGI</button>
+      </div>
+    </div>
+
+    <div id="betting-screen" class="screen-overlay">
+      <div class="overlay-content">
+        <h1>💰 TARUHAN</h1>
+        <div class="balance-info">
+          <h3>Saldo Anda: $<span id="current-balance">5000</span></h3>
+        </div>
+        <div class="betting-controls">
+          <label for="bet-amount">Jumlah Taruhan:</label>
+          <input type="number" id="bet-amount" min="100" max="5000" value="100" />
+          <div class="bet-buttons">
+            <button class="bet-quick" data-amount="100">$100</button>
+            <button class="bet-quick" data-amount="500">$500</button>
+            <button class="bet-quick" data-amount="1000">$1000</button>
+          </div>
+          <button id="btn-place-bet">TARUH</button>
+        </div>
+      </div>
+    </div>
+
+    <h1>🎮 PERMAINAN UNO 🎮</h1>
+    
+    <div class="game-info">
+      <div class="balance-display">
+        <h3>Saldo: $<span id="balance-display">5000</span></h3>
+        <h3>Taruhan: $<span id="bet-display">0</span></h3>
+      </div>
+      <h3>Giliran Saat Ini: <span id="current-turn">Pemain</span></h3>
+      <div id="current-color-display">Warna Saat Ini: <span id="current-color">-</span></div>
+      <div id="uno-timer" class="uno-timer">UNO! <span id="timer-count">5</span>s</div>
+    </div>
+
+    <div class="game-container">
+      <div class="card-area">
+        <h3>🤖 Kartu Bot: <span id="bot-card-count">0</span></h3>
+        <div class="cards-display" id="bot-cards"></div>
+      </div>
+
+      <div class="center-area">
+        <div class="deck-area">
+          <div class="deck-card" id="draw-pile">
+            <img src="assets/card_back.png" alt="Tumpukan Ambil" />
+          </div>
+          <div class="discard-pile">
+            <img id="top-card" src="assets/card_back.png" alt="Tumpukan Buang" />
+          </div>
+        </div>
+        
+        <div class="color-selector" id="color-selector">
+          <button class="color-red" data-color="red">M</button>
+          <button class="color-blue" data-color="blue">B</button>
+          <button class="color-green" data-color="green">H</button>
+          <button class="color-yellow" data-color="yellow">K</button>
+        </div>
+      </div>
+
+      <div class="card-area">
+        <h3>👤 Kartu Anda: <span id="player-card-count">0</span></h3>
+        <div class="cards-display" id="player-cards"></div>
+      </div>
+    </div>
+
+    <p id="result"></p>
+
+    <div class="button-container">
+      <button id="btn-start-game">MULAI PERMAINAN</button>
+      <button id="btn-uno" disabled>UNO!</button>
+      <button id="btn-call-uno" disabled>PANGGIL UNO!</button>
+      <button id="btn-reset">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
