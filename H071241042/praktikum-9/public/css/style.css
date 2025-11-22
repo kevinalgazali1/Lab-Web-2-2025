@@ -1,0 +1,510 @@
+/* ===== VARIABEL WARNA ===== */
+
+:root {
+    --warna-biru: #a7d2e7;
+    --warna-putih: #f8f5f0;
+    --warna-hijau: #8db596;
+    --warna-hijau-gelap: #5d7b5d;
+    --warna-kuning: #f9d56e;
+    --warna-oranye: #e8a87c;
+    --warna-pink: #e8b4bc;
+    --warna-ungu: #b8a3cc;
+    --warna-coklat: #a68b6d;
+    --warna-text: #2d4d2d;
+}
+
+
+/* ===== RESET & STYLE DASAR ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, var(--warna-biru) 0%, #c2e6f5 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--warna-text);
+    line-height: 1.6;
+}
+
+
+/* ===== LAYOUT ===== */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+    background: rgba(141, 181, 150, 0.95);
+    padding: 1rem 0;
+    box-shadow: 0 4px 20px rgba(93, 123, 93, 0.2);
+    border-bottom: 3px solid var(--warna-hijau-gelap);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--warna-text);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: var(--warna-text);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: var(--warna-hijau-gelap);
+    color: white;
+}
+
+
+/* ===== KONTEN UTAMA ===== */
+
+.main-container {
+    background: rgba(248, 245, 240, 0.95);
+    border-radius: 15px;
+    margin: 2rem auto;
+    padding: 2rem;
+    min-height: calc(100vh - 120px);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 15px 35px rgba(93, 123, 93, 0.15);
+}
+
+
+/* ===== KARTU ===== */
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.card-header {
+    background: linear-gradient(135deg, var(--warna-hijau), var(--warna-hijau-gelap));
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 12px 12px 0 0;
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+    font-weight: 600;
+}
+
+
+/* ===== TOMBOL ===== */
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background: var(--warna-biru);
+    color: white;
+}
+
+.btn-success {
+    background: var(--warna-hijau);
+    color: white;
+}
+
+.btn-warning {
+    background: var(--warna-kuning);
+    color: #8b6d2a;
+}
+
+.btn-danger {
+    background: var(--warna-oranye);
+    color: white;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ===== TABEL ===== */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+    background: linear-gradient(135deg, var(--warna-hijau), var(--warna-hijau-gelap));
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.table td {
+    padding: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+
+/* ===== FORM ===== */
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--warna-text);
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--warna-biru);
+    box-shadow: 0 0 0 3px rgba(167, 210, 231, 0.2);
+}
+
+.form-select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+/* ===== GRID SYSTEM ===== */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+.col {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    padding: 0 1rem;
+}
+
+.col-md-4 {
+    flex: 0 0 33.333%;
+    padding: 0 1rem;
+}
+
+.col-md-3 {
+    flex: 0 0 25%;
+    padding: 0 1rem;
+}
+
+.col-md-8 {
+    flex: 0 0 66.666%;
+    padding: 0 1rem;
+}
+
+.col-md-10 {
+    flex: 0 0 83.333%;
+    padding: 0 1rem;
+}
+
+
+/* ===== ALERTS ===== */
+
+.alert {
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+
+/* ===== BADGES ===== */
+
+.badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.badge-primary {
+    background: var(--warna-biru);
+    color: white;
+}
+
+.badge-success {
+    background: var(--warna-hijau);
+    color: white;
+}
+
+.badge-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+
+/* ===== KARTU STATISTIK ===== */
+
+.stats-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    color: white;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stats-card i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.stats-card .number {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+}
+
+.stats-card .label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+
+/* ===== CLASS UTILITY ===== */
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.gap-1 {
+    gap: 0.5rem;
+}
+
+.gap-2 {
+    gap: 1rem;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-1 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 2rem;
+}
+
+.mt-1 {
+    margin-top: 0.5rem;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
+
+.mt-3 {
+    margin-top: 1.5rem;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.p-1 {
+    padding: 0.5rem;
+}
+
+.p-2 {
+    padding: 1rem;
+}
+
+.p-3 {
+    padding: 1.5rem;
+}
+
+.me-1 {
+    margin-right: 0.5rem;
+}
+
+.me-2 {
+    margin-right: 1rem;
+}
+
+.ms-auto {
+    margin-left: auto;
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    background: var(--warna-hijau-gelap);
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .navbar-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .col-md-6,
+    .col-md-4,
+    .col-md-3,
+    .col-md-8,
+    .col-md-10 {
+        flex: 0 0 100%;
+        margin-bottom: 1rem;
+    }
+    .main-container {
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+    .table {
+        font-size: 0.9rem;
+    }
+    .table th,
+    .table td {
+        padding: 0.75rem 0.5rem;
+    }
+}
